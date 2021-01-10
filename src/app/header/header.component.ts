@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  public popupFlag:boolean=false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  showPopup(){
+    this.popupFlag= !this.popupFlag;
+  }
+  onClose(flag: boolean) {
+    this.popupFlag = flag;
+  }
 }

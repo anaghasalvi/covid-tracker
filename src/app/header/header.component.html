@@ -4,8 +4,9 @@
         <div>
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </div>
-        <div class="ml-4 renew-wrap px-3 pt-2 pb-1 text-primary font-weight-bold">Renew pro</div>
-        <div class="ml-4"><img src="assets/images/email-notif.png" alt="notification" class="header-icon"></div>
-        <div class="ml-4"><img src="assets/images/shield.png" alt="safeguard" class="header-icon"></div>
+        <div class="ml-4 pointer renew-wrap px-3 pt-2 pb-1 text-primary font-weight-bold" (click)="showPopup()">Renew pro</div>
+        <div class="ml-4 pointer" (click)="showPopup()"><img src="assets/images/email-notif.png" alt="notification" class="header-icon"></div>
+        <div class="ml-4 pointer" (click)="showPopup()"><img src="assets/images/shield.png" alt="safeguard" class="header-icon"></div>
       </div>
+      <app-sample-popup *ngIf="popupFlag" (closePopup)="onClose($event)"></app-sample-popup>
  
