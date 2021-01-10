@@ -1,0 +1,9 @@
+<div class="bg-white h-100 p-3">
+    <div (click)="showPopup()"><img src="assets/images/menu-icon-primary.png" alt="menu-1" class="side-tab-icons"></div>
+    <div (click)="showPopup()" class="mt-5"><img src="assets/images/menu-icon-secondary.png" alt="menu-2" class="side-tab-icons"></div>
+    <div (click)="showPopup()" class="mt-5"><img src="assets/images/tab-2.png" alt="menu-3" class="side-tab-icons-sm"></div>
+    <div (click)="showPopup()" class="mt-4"><img src="assets/images/tab-3.png" alt="menu-4" class="side-tab-icons-sm"></div>
+    <div (click)="showPopup()" class="mt-4"><img src="assets/images/tab-4.png" alt="menu-5" class="side-tab-icons-sm"></div>
+    <div (click)="showPopup()" class="mt-4"><img src="assets/images/tab-1.png" alt="menu-6" class="side-tab-icons-sm"></div>
+</div>
+<app-sample-popup *ngIf="popupFlag" (closePopup)="onClose($event)"></app-sample-popup>
