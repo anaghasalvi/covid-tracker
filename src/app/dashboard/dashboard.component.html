@@ -50,7 +50,7 @@
                                             <div class="py-3">
                                                 <canvas id="myChart" width="400" height="400"></canvas>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -72,13 +72,41 @@
                                                     <tr>
 
                                                         <td>
-                                                            <div class="wave-icon px-2 pt-2"><img src="assets/images/menu-icon-primary.png" alt=""></div>Punjab</td>
-                                                        <td ><p class="mt-3">{{testedData.testedPu | number}}</p></td>
+                                                            <div class="d-flex">
+                                                                <div class="wave-icon px-2 pt-2">
+                                                                    <img src="assets/images/menu-icon-primary.png"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="ml-3 mt-2">
+                                                                    Punjab
+                                                                    <p class="text-sm">Sketch App</p>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <p class="mt-3">{{testedData.testedPu | number}}</p>
+                                                        </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class="wave-icon px-2 pt-2">
+                                                                    <img src="assets/images/menu-icon-primary.png"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="ml-3 mt-2">
+                                                                    Rajasthan
+                                                                    <p class="text-sm">Figma </p>
 
-                                                        <td><div class="wave-icon px-2 pt-2"><img src="assets/images/menu-icon-primary.png" alt=""></div>Rajasthan</td>
-                                                        <td><p class="mt-3">{{testedData.testedRa | number}}</p></td>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td>
+                                                            <p class="mt-3">{{testedData.testedRa | number}}</p>
+                                                        </td>
 
                                                     </tr>
 
@@ -89,14 +117,14 @@
                                     <div class="col-6">
                                         <h6>Kerala</h6>
                                         <div class="row bg-white rounded">
-                                            <div class="col-6 px-0"> 
+                                            <div class="col-6 px-0">
                                                 <div class="d-flex justify-content-center mt-5 pt-3">
                                                     <h2>{{testedData.testedKe | number}}</h2>
                                                 </div>
-                                             
+
                                             </div>
-                                            <div class="col-6 px-0"><img src="assets/images/banner2.png" class="w-100 custom-height"
-                                                    alt="banner2"></div>
+                                            <div class="col-6 px-0"><img src="assets/images/banner2.png"
+                                                    class="w-100 custom-height" alt="banner2"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -108,8 +136,8 @@
                             <div>
                                 <img src="assets/images/banner3.jpg" class="w-100" alt="banner3">
                             </div>
-                            <div>
-                                graph
+                            <div class="mt-4">
+                                <canvas id="bar-chart" width="800" height="1000"></canvas>
                             </div>
                         </div>
 
