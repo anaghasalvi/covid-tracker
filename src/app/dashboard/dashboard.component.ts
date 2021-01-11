@@ -103,7 +103,7 @@ export class DashboardComponent implements OnInit {
           labels: ["October", "November", "December"],
           datasets: [
             {
-              label: "Population (millions)",
+              label: "Recovered count",
               backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
               data: [recoveredData['october'], recoveredData['november'], recoveredData['december']]
             }
